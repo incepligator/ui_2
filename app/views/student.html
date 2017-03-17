@@ -1,0 +1,72 @@
+
+
+
+<div id="password-container">
+    <div class="container" >
+        
+        
+    <form name="password-form">     
+    
+    
+          <div class="row">
+            <div class="col-md-2">
+                <md-input-container>
+                          <input type="text" placeholder="Enter First Name" ng-model="studentForm.firstName">
+                     </md-input-container>
+                
+                    <md-input-container>
+                    <input type="text" placeholder="Enter Last Name" ng-model="studentForm.lastName">
+                </md-input-container>
+                <md-input-container>
+                    <input type="text" placeholder="Address" ng-model="studentForm.address">
+                </md-input-container>
+                
+                <md-input-container>
+                    <input type="date" placeholder="Enter BirthDate" ng-model="studentForm.dob" >
+                </md-input-container>
+                <md-input-container>
+                    <input type="password" placeholder="Enter SSN Number" ng-model="studentForm.ssn" >
+                </md-input-container>
+                
+                <md-radio-group ng-model="studentForm.gender">
+
+                <md-radio-button value="male" class="md-primary" ng-model="studentForm.gender">Male</md-radio-button>
+                        <md-radio-button value="female" ng-model="studentForm.gender"> Female </md-radio-button>
+                        <md-radio-button value="transgender" ng-model="studentForm.gender">Prefer Not to Answer</md-radio-button>
+
+            </md-radio-group>
+                
+                
+                 <md-input-container>
+                    <input type="text" placeholder="Enter email" ng-model="studentForm.email" >
+                </md-input-container>
+                
+                 <md-input-container>
+                    <input type="text" placeholder="Enter git username" ng-model="studentForm.git" >
+                </md-input-container>
+                
+            </div>
+        </div>
+    
+     
+
+
+
+
+
+
+
+
+    </form>
+    
+    
+    
+    </div>
+</div>
+
+
+
+
+
+
+<md-button ng-click="submitForm()">Submit</md-button>

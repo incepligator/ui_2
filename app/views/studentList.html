@@ -1,0 +1,35 @@
+<h4>human</h4>
+
+<div>
+
+    <table>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+        
+        
+        
+        
+        </tr>
+        
+        
+        <tr  ng-repeat="human in dataStudentCtrl |filter:search track by $index">
+              
+            
+          <td> <h3> {{human.firstName}}</h3>   </td>  
+        
+        <td> <h3>{{human.lastName}}</h3> </td>
+        
+        
+        
+        
+        </tr>
+    
+    
+    
+    
+    </table>
+   
+
+
+</div>

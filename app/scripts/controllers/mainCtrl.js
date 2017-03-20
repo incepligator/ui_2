@@ -1,8 +1,9 @@
 "use strict";
 angular.module("attendance").controller("mainCtrl",["$scope","passwordService",function($scope,ps){
     $scope.testString = "Hello World";
-    $scope.auth=ps.auth;
     
+    
+    $scope.auth=ps.auth;
     
     $scope.$watch(function(){
         return ps.auth;
@@ -12,4 +13,12 @@ angular.module("attendance").controller("mainCtrl",["$scope","passwordService",f
             $scope.auth=newVal;
         }
     });
+    
+    
+    
+    
+    
+    
+   
+   
 }]);

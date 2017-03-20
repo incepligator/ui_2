@@ -1,26 +1,33 @@
-<h4>human</h4>
+
 
 <div>
 
-    <table>
+    <table class="table  table-bodered table-striped table-hover">
             <tr>
                 <th>FirstName</th>
                 <th>LastName</th>
-        
-        
+                <th>Address</th>
+                <th>DOB</th>
+                <th>SSN</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Git</th>
         
         
         </tr>
         
         
-        <tr  ng-repeat="human in dataStudentCtrl |filter:search track by $index">
+        <tr  ng-repeat="human in studentList |filter:search track by $index">
               
             
-          <td> <h3> {{human.firstName}}</h3>   </td>  
-        
-        <td> <h3>{{human.lastName}}</h3> </td>
-        
-        
+            <td>{{human.firstName}}</td>  
+            <td>{{human.lastName}}</td>
+            <td>{{human.address}}</td>  
+            <td>{{human.dob}}</td>
+            <td>{{human.ssn}}</td>  
+            <td>{{human.gender}}</td>
+            <td>{{human.email}}</td>  
+            <td>{{human.git}}</td>
         
         
         </tr>

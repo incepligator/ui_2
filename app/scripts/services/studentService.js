@@ -31,8 +31,33 @@ angular.module("attendance").service("studentService",[function(){
    
     this.getFirstName=()=>this.studentServiceForm.firstName;
     
-    
-    
+    var person1={
+                                                 
+         "firstName":"Shrawan",
+        "lastName":"Shrestha",
+         "address":"Dillibazar",
+        "dob":"2042-08-17",
+         "ssn":"984-14-3147",
+        "gender":"Male",
+         "email":"metal.ray17@gmail.com",
+        "git":"incepligator"
+              
+          }
+    var person2={
+                                                 
+         "firstName":"Jeet",
+        "lastName":"Kharka",
+         "address":"Jhapa",
+        "dob":"2037-08-17",
+         "ssn":"984-14-3147",
+        "gender":"Male",
+         "email":"jeet@gmail.com",
+        "git":"jeetkhark"
+              
+          }
+         
+        this.dataStudent.push(person1);
+    this.dataStudent.push(person2);
     
    /* 
      this.submitForm=function(){

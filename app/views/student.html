@@ -1,17 +1,17 @@
 
 
 
-<div id="password-container">
+<div id="password-container" >
     <div class="container" >
         
         
-    <form name="password-form">     
+    <form name="password-form" ng-submit="submitForm()">     
     
     
           <div class="row">
             <div class="col-md-2">
                 <md-input-container>
-                          <input type="text" placeholder="Enter First Name" ng-model="studentForm.firstName">
+                          <input type="text" placeholder="Enter First Name" ng-model="studentForm.firstName" required>
                      </md-input-container>
                 
                     <md-input-container>
@@ -51,10 +51,12 @@
      
 
 
+<div>
+    <button>test</button>
+</div>
 
 
-
-
+<md-button type="submit" class="md-raised md-primary">Submit</md-button>
 
 
     </form>
@@ -69,4 +71,3 @@
 
 
 
-<md-button ng-click="submitForm()">Submit</md-button>

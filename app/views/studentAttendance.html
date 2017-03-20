@@ -9,7 +9,11 @@
         
        
         </tr >
-                
+              </div>
+            
+            <div class="col-md-2">
+            
+            
              <tr ng-repeat="item in studentAttendance">   
             <td  >{{item.name}}</td>  
                 
@@ -18,7 +22,7 @@
                 </tr>
     
     
-    </div>
+     </div> 
     </div>
     </table>
 
@@ -28,15 +32,18 @@
 <md-button class="md-raised md-primary" ng-click="submitAttendance()">Submit</md-button>
 
 
-<table ng-repeat="student in attendent">
-    <tr>
-        <th >NAME</th>
-        <th >{{date}}</th>
+<table  class="table table-hover" >
+    <tr class="row" >
+        <th >DATE </th>
         
-    </tr>
- <tr>
-        <td >{{student.name}}</td>
-        <td >{{student.date}}</td>
+        <th>Name </th>
+        
+    </tr >
+     
+        <tr  class="row" ng-repeat="dd in dateA track by $index">
+            
+        <td class="col-md-2" >{{dd | date:"EEE/MMM/dd/y"}}</td>
+        <td  ng-repeat="student in attendent |filter:search track by $index" class="col-md-2" ng-model="student.status">{{student.name}}</td>
         
     </tr>
 

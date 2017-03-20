@@ -4,6 +4,10 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
     
     $scope.studentAttendance=as.studentAttendanceService;
     
+    
+
+    
+    
     $scope.date=new Date();
     
     
@@ -21,36 +25,44 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
         
     }];*/
     
+    $scope.dateA=[];
     
     $scope.present="present";
     
     
     
-    $scope.attendent=[];
+    $scope.attendent=[
+        
+  
+    ];
+    
+    
+      
+        
+    
     
     
      $scope.submitAttendance=()=>{
          
      //   var attendent = [];
          
+         $scope.dateA.push($scope.date);
+         console.log($scope.dateA);
+         
          
          
         $scope.studentAttendance.map(function(item) {
             if (item.status){
+                
                 item.date=$scope.date;
                 
                 
-                var water={
-                    
-                    "name":"",
-                    "status":"",
-                    "date":""
-                    
-                }
+              
                 $scope.attendent.push(item);
-                
+               
             }
          //   return attendent;
+          
             
             
         });
@@ -61,8 +73,7 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
          
         console.log($scope.attendent);
         
-      
-         
+        
         
     }
 

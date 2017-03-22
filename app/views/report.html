@@ -1,0 +1,24 @@
+<h1>waterworld</h1>
+<div ng-repeat="(key, prop) in attendent ">
+    
+    
+    
+        <div ng-repeat="(key2,val) in prop" style="display:'flex';direction:'column'">
+            <div style="font-size:20px">{{key2}}</div>
+            <div ng-repeat="name in val" style="display:'flex';direction:'column'">
+                <span>{{name.name}}</span>
+            </div>
+        </div>
+<!--
+        <ul ng-repeat="val in prop">
+            {{val}}
+            <ul ng-repeat="(o, values) in val">
+            <li>{{o}}</li>
+                 <ul ng-repeat="i in values">
+                      <li>{{i}}</li>
+                </ul>
+             
+            </ul>
+        </ul>
+-->
+</div>

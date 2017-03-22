@@ -22,7 +22,7 @@ angular.module("attendance").controller("navCtrl",["$scope",function($scope){
     
     
     
-    $scope.checkid=0    ;
+    $scope.checkid=4    ;
         
     $scope.updateId=(id)=>{  
         

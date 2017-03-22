@@ -3,11 +3,7 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
     
     
     $scope.studentAttendance=as.studentAttendanceService;
-    
-    
-
-    
-    
+  
     $scope.date=new Date();
     
     
@@ -18,79 +14,54 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
         
     }
    
-    
-/*    $scope.date=[{
-                    
-        
-        
-    }];*/
-    
-    $scope.dateA=[];
-    
     $scope.present="present";
     
+
     
+    $scope.attendent=[];
     
-    $scope.attendent=[
-        
-  
-    ];
-    
-    
-      
-        
     
     
     
      $scope.submitAttendance=()=>{
          
-     //   var attendent = [];
+                  
+                                
+         var testObj={};
          
-         $scope.dateA.push($scope.date);
-         console.log($scope.dateA);
-         
-         
-         
+        
         $scope.studentAttendance.map(function(item) {
-            if (item.status){
+            
+                if (item.status){
                 
-                item.date=$scope.date;
+                    item.date=$scope.date;
+                      
+                if(testObj[item.date]==undefined){
+                    testObj[item.date]=[];
+                }
+                    
+                    if(testObj[item.date])
+                
+                testObj[item.date].push({
+                    "name":item.name
+                });
                 
                 
-              
-                $scope.attendent.push(item);
-               
             }
-         //   return attendent;
-          
-            
-            
+        
         });
-         
-         
-      //   this.report=attendent;
-         
-         
-        console.log($scope.attendent);
+         $scope.attendent.push(testObj);
+       
+       
         
         
         
     }
 
- //   console.log(report);
+     console.log($scope.attendent);
     
-/*    $scope.report=[
-        
-        {
-            "Date":"$scope.date",
-            "Name":""
-        
-        
-        }
-    ];*/
-    
-    
-    
+     
+     
 }]);
 
 

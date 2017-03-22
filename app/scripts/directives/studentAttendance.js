@@ -6,4 +6,4 @@ angular.module("attendance").directive("studentAttendance",[function(){
         
         controller:"attendanceCtrl"
     }
-}]);
+}]); 

@@ -16,8 +16,7 @@ angular.module("attendance").controller("mainCtrl",["$scope","passwordService",f
     
     
     
-    
-    
+
     
    
    

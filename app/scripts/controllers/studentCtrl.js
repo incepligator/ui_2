@@ -12,6 +12,7 @@ angular.module("attendance").controller("studentCtrl",["$scope","studentService"
        
        $scope.submitForm=()=>{
             alert();
+           
           var studentServiceForm={
                                             
          "firstName":$scope.studentForm.firstName,

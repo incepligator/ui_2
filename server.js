@@ -113,6 +113,7 @@ var services ={
                 "params":['studentlistid']
             }
         },
+        
         "post":{
             "url":"/service/studentlist",
             "query":"INSERT INTO studentlist SET ?",

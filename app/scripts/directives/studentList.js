@@ -4,6 +4,6 @@ angular.module("attendance").directive("studentList",[function(){
         restrict:"EA",
         templateUrl:"/app/views/studentList.html",
         
-        controller:"studentCtrl"
+        controller:"classCtrl"
     }
 }]);

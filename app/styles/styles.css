@@ -136,7 +136,7 @@ body {
 
 body {
   background: #877;
-  background: radial-gradient(red, black);
+  background: Linear-gradient(#73C8A9, #373G44);
  /* overflow: hidden;*/
 }
 

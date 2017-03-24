@@ -15,8 +15,24 @@
         
         
         </tr>
+        <h2> By Promise </h2>
+          <tr  ng-repeat="xx in studentListId |filter:search track by $index">
+              
+            
+            <td>{{xx.fname}}</td>  
+            <td>{{xx.lname}}</td>
+            <td>{{xx.address}}</td>  
+            <td>{{xx.dob | date: "MMM/d/y"}}</td>
+            <td>{{xx.ssn}}</td>  
+            <td>{{xx.gender}}</td>
+            <td>{{xx.email}}</td>  
+            <td>{{xx.git}}</td>
         
         
+        </tr>
+        
+        
+<!--        <h2> By Https request only </h2>
         <tr  ng-repeat="human in myWelcome |filter:search track by $index">
               
             
@@ -30,9 +46,9 @@
             <td>{{human.git}}</td>
         
         
-        </tr>
+        </tr>-->
         
-          <tr  ng-repeat="human in studentList |filter:search track by $index">
+    <!--      <tr  ng-repeat="human in studentList |filter:search track by $index">
               
             
             <td>{{human.firstName}}</td>  
@@ -46,7 +62,7 @@
         
         
         </tr>
-    
+    -->
     
     
     

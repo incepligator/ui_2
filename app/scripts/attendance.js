@@ -33,7 +33,7 @@ angular.module("attendance",['ngMaterial','ngMessages', 'ui.router']).config(fun
             
             url:"/studentList",
             templateUrl:'/app/views/studentList.html',
-            controller:"studentCtrl"
+            controller:"classCtrl"
             
             
         }).state("error",{

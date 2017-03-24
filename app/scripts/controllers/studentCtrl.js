@@ -29,8 +29,9 @@ angular.module("attendance").controller("studentCtrl",["$scope","studentService"
           
            
          ss.dataStudent.push(studentServiceForm);
-         console.log("from ctrl");
-         console.log(ss.dataStudent);
+  //       console.log("from ctrl");
+           
+        // console.log(ss.dataStudent);
  
     }
        $scope.test=function(){alert("what the duce");};

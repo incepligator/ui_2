@@ -26,13 +26,14 @@ angular.module("attendance",['ngMaterial','ngMessages', 'ui.router']).config(fun
             
             url:"/studentForm",
             templateUrl: '/app/views/student.html',
-            controller:"studentCtrl"
+            controller:"studentCtrl",
+            
             
         }).state("studentList",{
             
             
             url:"/studentList",
-            templateUrl:'/app/views/studentList.html',
+            templateUrl:'/app/views/class.html',
             controller:"classCtrl"
             
             
@@ -49,6 +50,7 @@ angular.module("attendance",['ngMaterial','ngMessages', 'ui.router']).config(fun
                 url:"/app/views/index.html",
               templateurl:"/app/views/text.html",
             controller:""
+            
         });
        
     }]);

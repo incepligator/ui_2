@@ -9,8 +9,15 @@ angular.module("attendance").controller("classCtrl",
         
         
     $scope.classFormModel = {
-        title:"",
-        active:""
+        id:"",
+        fname:"",
+        lname:"",
+        address:"",
+        dob:"",
+        ssn:"",
+        gender:"",
+        email:"",
+        git:""
     }
     
         
@@ -54,22 +61,32 @@ angular.module("attendance").controller("classCtrl",
         
         
     
- /*   var sampleTest={
+/*   var sampleTest={
         "title":"test123",
         "active":1
-    }
+    }*/
     
     
     
     
-    var classPost = classService.postClass($scope.classFormModel);
-    classPost.then(function(response){
-        alert("success");
-    })
+    $scope.classPost=()=>{
+        
+        alert("classPost");
+        
+        
+        classService.postStudentData($scope.classFormModel).then(function(response){
+        alert("success data write in server")});
+        
+    };
+        
+    
+    
+        
+   
         
         
         
-    $scope.classSubmit=function(){
+/*    $scope.classSubmit=function(){
         console.log($scope.classListActive);
         console.log($scope.classListAll);
         console.log($scope.classListId);

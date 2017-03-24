@@ -11,11 +11,11 @@
           <div class="row">
             <div class="col-md-2">
                 <md-input-container>
-                          <input type="text" placeholder="Enter First Name" ng-model="studentForm.firstName" required>
+                          <input type="text" placeholder="Enter First Name" ng-model="classFormModel.fname" required>
                      </md-input-container>
                 
                     <md-input-container>
-                    <input type="text" placeholder="Enter Last Name" ng-model="studentForm.lastName">
+                    <input type="text" placeholder="Enter Last Name" ng-model="classFormModel.lname">
                 </md-input-container>
                 <md-input-container>
                     <input type="text" placeholder="Address" ng-model="studentForm.address">
@@ -65,7 +65,7 @@ l
     </div>
 </div>
 
-
+<button ng-click="classPost()">Post to data base </button>
 
 
 

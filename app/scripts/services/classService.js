@@ -60,8 +60,8 @@ angular.module("attendance").service("classService",['$http',function($http){
     */
     
     //post 
-//    var sampleTest={
-/*        "title":"test123",
+/*   var sampleTest={
+       "title":"test123",
         "active":1
     }
     
@@ -77,5 +77,20 @@ angular.module("attendance").service("classService",['$http',function($http){
         });
     };*/
     
+        this.postStudentData = function(dataParam){
+            
+        return $http({
+            
+            method:"POST",
+            url:"/service/studentlist",
+            data:dataParam
+            
+           
+            
+            
+        }).then(function(result){
+            return result.status;
+        });
+    };
     
 }]);

@@ -45,7 +45,10 @@ angular.module("attendance",['ngMaterial','ngMessages', 'ui.router']).config(fun
               url:"/waterworld",
             template:"<h1>Welcome to the jungle</h1>"
             
-        })
-        ;
+        }).state("ripple",{
+                url:"/app/views/index.html",
+              templateurl:"/app/views/text.html",
+            controller:""
+        });
        
     }]);

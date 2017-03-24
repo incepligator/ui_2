@@ -15,6 +15,17 @@
             
             <nav-bar ng-if="auth"></nav-bar>
             
+            <ripple-test ng-if="!auth" id="center"></ripple-test>
+            
+            
+            
+            <div id="nav-bar">
+            <span ui-sref="ripple" id="nav-bar">Ripple Test</span>
+            
+            </div>
+            <div ui-view></div>
+            
+            
             
             
             
@@ -79,6 +90,7 @@
          <script type="text/javascript" src="/app/scripts/services/attendanceService.js"></script>
         
         <script type="text/javascript" src="/app/scripts/controllers/mainCtrl.js"></script>
+        <script type="text/javascript" src="/app/scripts/controllers/rippleCtrl.js"></script>
         <script type="text/javascript" src="/app/scripts/controllers/personCtrl.js"></script>
         <script type="text/javascript" src="/app/scripts/controllers/passwordCtrl.js"></script>
         <script type="text/javascript" src="/app/scripts/controllers/studentCtrl.js"></script>
@@ -87,6 +99,7 @@
         <script type="text/javascript" src="/app/scripts/controllers/attendanceCtrl.js"></script>
         <script type="text/javascript" src="/app/scripts/controllers/reportCtrl.js"></script>
         
+        
         <script type="text/javascript" src="/app/scripts/directives/navBar.js"></script>
         <script type="text/javascript" src="/app/scripts/directives/password.js"></script>
         <script type="text/javascript" src="/app/scripts/directives/student.js"></script>
@@ -94,6 +107,8 @@
         <script type="text/javascript" src="/app/scripts/directives/studentList.js"></script>
         <script type="text/javascript" src="/app/scripts/directives/studentAttendance.js"></script>
         <script type="text/javascript" src="/app/scripts/directives/studentReport.js"></script>
+        <script type="text/javascript" src="/app/scripts/directives/rippleTest.js"></script>
     </body>
+    
     
 </html>

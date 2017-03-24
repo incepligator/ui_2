@@ -86,3 +86,86 @@ body {
 #nav-bar span:hover{
     background-color:cyan;
     color:black;
+    
+    
+}
+canvas {
+  background: 
+    linear-gradient(
+      hsl(200, 50%, 80%) 0%, 
+      hsl(200, 30%, 95%) 75%)
+  ;
+  display: block;
+}
+
+/*div {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+    opacity: 60%;
+background: url(http://jackrugile.com/images/misc/skyline-texture.png);
+}*/
+
+.center {
+    margin: auto;
+/*    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;*/
+}
+
+
+/*//for the scroll lock
+body {
+  overflow: hidden;
+}*/
+
+
+
+/*
+canvas {
+  display: block;
+}*/
+
+
+/*html,
+body {
+  height: 100%;
+}*/
+
+body {
+  background: #877;
+  background: radial-gradient(red, black);
+ /* overflow: hidden;*/
+}
+
+canvas {
+  background: #000;
+  bottom: 0;
+  box-shadow:
+    0 0 0 10px #222,
+    0 30px 30px -20px #000
+  ;
+  left: 0;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+
+input[type="text"], textarea {
+
+  background-color : #d1d1d1; 
+
+}
+
+input[type="password"], textarea {
+
+  background-color : #d1d1d1; 
+
+}

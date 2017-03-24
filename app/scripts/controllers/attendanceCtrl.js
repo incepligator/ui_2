@@ -50,6 +50,7 @@ angular.module("attendance").controller("attendanceCtrl",["$scope","attendanceSe
             }
         
         });
+         
          $scope.attendent.push(testObj);
        
        

@@ -35,5 +35,8 @@ angular.module("attendance").controller("studentCtrl",["$scope","studentService"
     }
        $scope.test=function(){alert("what the duce");};
     
+    
+ 
+    
        
 }]);

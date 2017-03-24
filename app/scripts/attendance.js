@@ -1,5 +1,5 @@
 "use strict";
-angular.module("attendance",['ngMaterial','ngMessages']).config(function($mdThemingProvider){
+angular.module("attendance",['ngMaterial','ngMessages', 'ui.router']).config(function($mdThemingProvider){
     
     
     
@@ -7,4 +7,45 @@ angular.module("attendance",['ngMaterial','ngMessages']).config(function($mdThem
     
     
     
-});
+    
+    
+}).config(['$locationProvider','$stateProvider','$urlRouterProvider',
+             
+             
+    function($locationProvider,$stateProvider, $urlRouterProvider) {
+        
+        
+       // $locationProvider.html5Mode(true);
+        
+        
+        $urlRouterProvider.otherwise("/");
+        
+        
+        $stateProvider.state('studentForm',{
+            
+            
+            url:"/studentForm",
+            templateUrl: '/app/views/student.html',
+            controller:"studentCtrl"
+            
+        }).state("studentList",{
+            
+            
+            url:"/studentList",
+            templateUrl:'/app/views/studentList.html',
+            controller:"studentCtrl"
+            
+            
+        }).state("error",{
+            
+            url:"/error",
+            template:"<h1>page not found</h1>"
+            
+        }).state("waterworld",{
+              url:"/waterworld",
+            template:"<h1>Welcome to the jungle</h1>"
+            
+        })
+        ;
+       
+    }]);

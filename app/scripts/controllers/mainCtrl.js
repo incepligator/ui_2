@@ -1,5 +1,5 @@
 "use strict";
-angular.module("attendance").controller("mainCtrl",["$scope","passwordService",function($scope,ps){
+angular.module("attendance").controller("mainCtrl",["$scope","passwordService","$http",function($scope,ps,$http){
     $scope.testString = "Hello World";
     
     
@@ -16,7 +16,10 @@ angular.module("attendance").controller("mainCtrl",["$scope","passwordService",f
     
     
     
-
+   $http.get("/service/studentlist/all").then(function(response) {
+        
+      $scope.myWelcome = response.data;
+  });
     
    
    

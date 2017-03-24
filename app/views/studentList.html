@@ -17,13 +17,28 @@
         </tr>
         
         
-        <tr  ng-repeat="human in studentList |filter:search track by $index">
+        <tr  ng-repeat="human in myWelcome |filter:search track by $index">
+              
+            
+            <td>{{human.fname}}</td>  
+            <td>{{human.lname}}</td>
+            <td>{{human.address}}</td>  
+            <td>{{human.dob | date: "MMM/d/y"}}</td>
+            <td>{{human.ssn}}</td>  
+            <td>{{human.gender}}</td>
+            <td>{{human.email}}</td>  
+            <td>{{human.git}}</td>
+        
+        
+        </tr>
+        
+          <tr  ng-repeat="human in studentList |filter:search track by $index">
               
             
             <td>{{human.firstName}}</td>  
             <td>{{human.lastName}}</td>
             <td>{{human.address}}</td>  
-            <td>{{human.dob}}</td>
+            <td>{{human.dob | date: "MMM/d/y"}}</td>
             <td>{{human.ssn}}</td>  
             <td>{{human.gender}}</td>
             <td>{{human.email}}</td>  

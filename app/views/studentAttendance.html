@@ -36,7 +36,7 @@
 <div ng-repeat="(key, prop) in attendent">
     
         <div ng-repeat="(key2,val) in prop " style="display:'flex';direction:'column'">
-            <div style="font-size:20px">{{key2}}</div>
+            <div style="font-size:20px">{{key2 | date: "MMM/d/y"}}</div>
             <div ng-repeat="name in val" style="display:'flex';direction:'column'">
                 <span>{{name.name}}</span>
             </div>

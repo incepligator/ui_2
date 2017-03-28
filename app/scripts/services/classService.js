@@ -93,4 +93,43 @@ angular.module("attendance").service("classService",['$http',function($http){
         });
     };
     
+    
+        this.putStudentData = function(dataParam){
+            
+          console.log(dataParam.id);
+            
+            
+         var idx=dataParam.id;
+            
+            
+        return $http({
+            
+            method:"PUT",
+            url:"/service/studentlist/"+idx,
+            data:dataParam
+            
+           
+            
+            
+        }).then(function(result){
+            return result.status;
+        });
+    };
+    
+     this.deleteStudentData = function(dataParam){
+            
+        return $http({
+            
+            method:"delete",
+            url:"/service/studentlist/"+dataParam
+            
+            
+           
+            
+            
+        }).then(function(result){
+            return result.status;
+        });
+    };
+    
 }]);

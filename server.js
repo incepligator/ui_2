@@ -104,12 +104,12 @@ var services ={
             },
             "active":{
                 "url":"/service/studentlist",
-                "query":"SELECT * FROM studentlist WHERE active = 1",
+                "query":"SELECT * FROM studentlist WHERE id = not null",
                 "params":[]
             },
             "byId":{
                 "url":"/service/studentlist/:studentlistid",
-                "query":"SELECT * FROM studentlist where studentlistid = ?",
+                "query":"SELECT * FROM studentlist where id = ?",
                 "params":['studentlistid']
             }
         },
@@ -121,13 +121,13 @@ var services ={
         },
         "put":{
             "url":"/service/studentlist/:id",
-            "query":"UPDATE studentlist SET ? WHERE studentlist = ?",
+            "query":"UPDATE studentlist SET ? WHERE id = ?",
             "params":[]
         },
         "delete":{
-            "url":"/service/studentlist/:studentlistid",
-            "query":"DELETE FROM studentlist WHERE studentlistid = ?",
-            "params":["studentlistid"]
+            "url":"/service/studentlist/:id",
+            "query":"DELETE FROM studentlist WHERE id = ?",
+            "params":["id"]
         }
     }
 

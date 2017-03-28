@@ -79,9 +79,29 @@ angular.module("attendance").controller("classCtrl",
         
     };
         
-    
-    
+       $scope.classPut=()=>{
         
+        alert("classPut");
+        
+       
+           
+        classService.putStudentData($scope.classFormModel).then(function(response){
+        alert("success data put in server")});
+        
+    };
+    
+       $scope.classDelete=()=>{
+        
+        alert("deleted");
+        
+       console.log($scope.classFormModel.id);
+           
+           var deltry=$scope.classFormModel.id;
+           
+        classService.deleteStudentData(deltry).then(function(response){
+        alert("success data delete in server")});
+        
+    };   
    
         
         
